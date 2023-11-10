@@ -6,12 +6,12 @@ from math import sqrt
 def primes(number_of_primes):
     if number_of_primes < 1:
         raise ValueError(f"Number of primes should be a positive number.")
-    list = []
-    num = 2
+    list = [2]
+    num = 3
     while len(list) < number_of_primes:
         if is_prime(num):
             list.append(num)
-        num += 1
+        num += 2
     return list
 
 def is_prime(num):
